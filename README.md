@@ -72,28 +72,28 @@ personal-task-manager/
 
 ## Core Components
 
-** Model Layer** 
+**Model Layer** 
 Defines data models:
 - **Task.java** — title, description, due date, priority, status, timestamps.  
 - **Category.java** — category grouping.  
 - **Priority.java** — Enum with `HIGH`, `MEDIUM`, `LOW` values.  
 
-** Repository Layer** 
+**Repository Layer** 
 - **TaskRepository.java** — stores tasks using a `ConcurrentHashMap`.  
 - **CategoryRepository.java** — manages in-memory categories.  
 
-** Service Layer** 
+**Service Layer** 
 Implements business logic:
 - **TaskService.java** — CRUD, filtering, sorting.  
 - **CategoryService.java** — manages categories.  
 - **NotificationService.java** — handles reminders.  
 - **ReportService.java** — generates reports and statistics.  
 
-** Utility Layer** 
+**Utility Layer** 
 - **DateValidator.java** — validates date inputs.  
 - **TaskValidator.java** — checks rules and duplicates.  
 
-**  Exception Layer** 
+**Exception Layer** 
 Custom exceptions:
 - **TaskNotFoundException**
 - **InvalidDateException**
@@ -117,18 +117,18 @@ Custom exceptions:
 ```
 ---
 
-**   Testing (TestNG)** 
+**Testing (TestNG)** 
 
 Includes full TestNG suite with:
 
-**  Test Areas** 
+**Test Areas** 
 - CRUD operations  
 - Filtering and sorting  
 - Exception handling  
 - Overdue tasks validation  
 
 
-**  Dependencies** 
+**Dependencies** 
 
 ```xml
 <dependencies>
@@ -161,11 +161,12 @@ mvn test
 
 **Key Testing Strategies Demonstrated:**
 
--Exception Testing: Verifying that critical operations throw the correct custom exceptions (e.g., DuplicateTaskException, TaskNotFoundException) upon business rule violation using @Test(expectedExceptions = ...).
+-**Exception Testing**: 
+        Verifying that critical operations throw the correct custom exceptions (e.g., DuplicateTaskException, TaskNotFoundException) upon business rule violation using @Test(expectedExceptions = ...).
 
--Data-Driven Testing: Utilizing @DataProvider to test service methods against various sets of input data (e.g., different date formats, all priority levels) for maximum coverage.
+-**Data-Driven Testing**: Utilizing @DataProvider to test service methods against various sets of input data (e.g., different date formats, all priority levels) for maximum coverage.
 
--State-Based Testing: Asserting the system's state after complex transactions (e.g., verifying getTasksByStatus returns the exact subset of tasks after multiple status updates).
+-**State-Based Testing**: Asserting the system's state after complex transactions (e.g., verifying getTasksByStatus returns the exact subset of tasks after multiple status updates).
 
 ---
 # Reports & Logging
@@ -175,7 +176,7 @@ mvn test
 
 ---
 
-** Future Enhancements**
+**Future Enhancements**
 
 - Database or JSON persistence  
 - Task import/export  
@@ -185,5 +186,5 @@ mvn test
 
 ---
 
-** Author**
+**Author**
 **Ruby Fathima**   
