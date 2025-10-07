@@ -1,0 +1,5 @@
+com\taskmanager\repository\TaskRepositoryTest.class
+com\taskmanager\service\ReportServiceTest.class
+com\taskmanager\service\TaskServiceTest.class
+com\taskmanager\util\DateValidatorTest.class
+com\taskmanager\service\CategoryServiceTest.class

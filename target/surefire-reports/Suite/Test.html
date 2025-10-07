@@ -1,0 +1,734 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 07 23:37:34 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (111 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testPriorityReport()'><b>testPriorityReport</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTask()'><b>testCreateTask</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testFindById()'><b>testFindById</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testValidFutureDate()'><b>testValidFutureDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testTaskById()'><b>testTaskById</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testGetAllCategories()'><b>testGetAllCategories</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testOverdueTasks()'><b>testOverdueTasks</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testDateFormats()'><b>testDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 31/12/2012 23:30</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testDelete()'><b>testDelete</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTaskWithoutTitle()'><b>testCreateTaskWithoutTitle</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td><div><pre>com.taskmanager.exception.TaskValidationException: Task title cannot be empty
+	at com.taskmanager.util.TaskValidator.validateTitle(TaskValidator.java:21)
+	at com.taskmanager.util.TaskValidator.validateTask(TaskValidator.java:13)
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:30)
+	at com.taskmanager.service.TaskServiceTest.testCreateTaskWithoutTitle(TaskServiceTest.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2088371948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2088371948'><pre>com.taskmanager.exception.TaskValidationException: Task title cannot be empty
+	at com.taskmanager.util.TaskValidator.validateTitle(TaskValidator.java:21)
+	at com.taskmanager.util.TaskValidator.validateTask(TaskValidator.java:13)
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:30)
+	at com.taskmanager.service.TaskServiceTest.testCreateTaskWithoutTitle(TaskServiceTest.java:164)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testLeapYearValidation()'><b>testLeapYearValidation</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 2000-02-29, true</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testTasksByPriority()'><b>testTasksByPriority</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testTasksCountByStatus()'><b>testTasksCountByStatus</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testUpdateCategory()'><b>testUpdateCategory</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testLeapYearDate()'><b>testLeapYearDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testGenerateReport()'><b>testGenerateReport</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testNullDate()'><b>testNullDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Please provide a date
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:22)
+	at com.taskmanager.util.DateValidatorTest.testNullDate(DateValidatorTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace592983282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace592983282'><pre>com.taskmanager.exception.InvalidDateException: Please provide a date
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:22)
+	at com.taskmanager.util.DateValidatorTest.testNullDate(DateValidatorTest.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testLeapYearValidation()'><b>testLeapYearValidation</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 2024-02-28 11:30, true</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testFindByIdNotFound()'><b>testFindByIdNotFound</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPriorities()'><b>testCreateTaskUsingPriorities</b><br>Test class: com.taskmanager.service.TaskServiceTest<br>Parameters: LOW</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testUpdateTask()'><b>testUpdateTask</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testCategoryById()'><b>testCategoryById</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testCreateCategory()'><b>testCreateCategory</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testPastDate()'><b>testPastDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Due date must be in the future
+	at com.taskmanager.util.DateValidator.validateFutureDate(DateValidator.java:70)
+	at com.taskmanager.util.DateValidatorTest.testPastDate(DateValidatorTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1108924067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1108924067'><pre>com.taskmanager.exception.InvalidDateException: Due date must be in the future
+	at com.taskmanager.util.DateValidator.validateFutureDate(DateValidator.java:70)
+	at com.taskmanager.util.DateValidatorTest.testPastDate(DateValidatorTest.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testGetNonExistentTask()'><b>testGetNonExistentTask</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td><div><pre>com.taskmanager.exception.TaskNotFoundException: Task not found with ID: non-existent-id
+	at com.taskmanager.service.TaskService.lambda$getTaskById$0(TaskService.java:55)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.taskmanager.service.TaskService.getTaskById(TaskService.java:55)
+	at com.taskmanager.service.TaskServiceTest.testGetNonExistentTask(TaskServiceTest.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1011279482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1011279482'><pre>com.taskmanager.exception.TaskNotFoundException: Task not found with ID: non-existent-id
+	at com.taskmanager.service.TaskService.lambda$getTaskById$0(TaskService.java:55)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.taskmanager.service.TaskService.getTaskById(TaskService.java:55)
+	at com.taskmanager.service.TaskServiceTest.testGetNonExistentTask(TaskServiceTest.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testClear()'><b>testClear</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testInvalidDateFormats()'><b>testInvalidDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 2024-12-32</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Invalid date format. Supported formats: yyyy-MM-dd, dd/MM/yyyy, dd-MM-yyyy, yyyy-MM-dd HH:mm
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:44)
+	at com.taskmanager.util.DateValidatorTest.testInvalidDateFormats(DateValidatorTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1278677872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1278677872'><pre>com.taskmanager.exception.InvalidDateException: Invalid date format. Supported formats: yyyy-MM-dd, dd/MM/yyyy, dd-MM-yyyy, yyyy-MM-dd HH:mm
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:44)
+	at com.taskmanager.util.DateValidatorTest.testInvalidDateFormats(DateValidatorTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testUpdateNonExistentCategory()'><b>testUpdateNonExistentCategory</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td><div><pre>com.taskmanager.exception.CategoryNotFoundException: Category not found with ID: non-existent-id
+	at com.taskmanager.service.CategoryService.updateCategory(CategoryService.java:26)
+	at com.taskmanager.service.CategoryServiceTest.testUpdateNonExistentCategory(CategoryServiceTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace817978763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace817978763'><pre>com.taskmanager.exception.CategoryNotFoundException: Category not found with ID: non-existent-id
+	at com.taskmanager.service.CategoryService.updateCategory(CategoryService.java:26)
+	at com.taskmanager.service.CategoryServiceTest.testUpdateNonExistentCategory(CategoryServiceTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testDateFormats()'><b>testDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 2000-12-31 11:30</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testStatusReport()'><b>testStatusReport</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testValidDate()'><b>testValidDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testDuplicateTask()'><b>testDuplicateTask</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td><div><pre>com.taskmanager.exception.DuplicateTaskException: This is duplicate task. Task is already available.
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:34)
+	at com.taskmanager.service.TaskServiceTest.testDuplicateTask(TaskServiceTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434234664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434234664'><pre>com.taskmanager.exception.DuplicateTaskException: This is duplicate task. Task is already available.
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:34)
+	at com.taskmanager.service.TaskServiceTest.testDuplicateTask(TaskServiceTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testInvalidDateFormats()'><b>testInvalidDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: in-valid-date</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Invalid date format. Supported formats: yyyy-MM-dd, dd/MM/yyyy, dd-MM-yyyy, yyyy-MM-dd HH:mm
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:44)
+	at com.taskmanager.util.DateValidatorTest.testInvalidDateFormats(DateValidatorTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807657332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807657332'><pre>com.taskmanager.exception.InvalidDateException: Invalid date format. Supported formats: yyyy-MM-dd, dd/MM/yyyy, dd-MM-yyyy, yyyy-MM-dd HH:mm
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:44)
+	at com.taskmanager.util.DateValidatorTest.testInvalidDateFormats(DateValidatorTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testCategoryReport()'><b>testCategoryReport</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testDateFormats()'><b>testDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 22-10-2024 20:30</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testLeapYearValidation()'><b>testLeapYearValidation</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 2016-02-29, true</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testTasksByCategory()'><b>testTasksByCategory</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testDateFormats()'><b>testDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 12/12/2012</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testFindAll()'><b>testFindAll</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testTasksByStatus()'><b>testTasksByStatus</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testAllEmptyRepositoryCategories()'><b>testAllEmptyRepositoryCategories</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testExists()'><b>testExists</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testAllTasks()'><b>testAllTasks</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testEmptyDate()'><b>testEmptyDate</b><br>Test class: com.taskmanager.util.DateValidatorTest</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Please provide a date
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:22)
+	at com.taskmanager.util.DateValidatorTest.testEmptyDate(DateValidatorTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace403147759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace403147759'><pre>com.taskmanager.exception.InvalidDateException: Please provide a date
+	at com.taskmanager.util.DateValidator.convertToDate(DateValidator.java:22)
+	at com.taskmanager.util.DateValidatorTest.testEmptyDate(DateValidatorTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPastDate()'><b>testCreateTaskUsingPastDate</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td><div><pre>com.taskmanager.exception.InvalidDateException: Due date must be in the future
+	at com.taskmanager.util.DateValidator.validateFutureDate(DateValidator.java:70)
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:31)
+	at com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPastDate(TaskServiceTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace928294079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace928294079'><pre>com.taskmanager.exception.InvalidDateException: Due date must be in the future
+	at com.taskmanager.util.DateValidator.validateFutureDate(DateValidator.java:70)
+	at com.taskmanager.service.TaskService.createTask(TaskService.java:31)
+	at com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPastDate(TaskServiceTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.util.DateValidatorTest.testDateFormats()'><b>testDateFormats</b><br>Test class: com.taskmanager.util.DateValidatorTest<br>Parameters: 1979-12-31</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.util.DateValidatorTest@65d6b83b</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testEmptyReport()'><b>testEmptyReport</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.service.ReportServiceTest.testTasksCountByPriority()'><b>testTasksCountByPriority</b><br>Test class: com.taskmanager.service.ReportServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.ReportServiceTest@79efed2d</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPriorities()'><b>testCreateTaskUsingPriorities</b><br>Test class: com.taskmanager.service.TaskServiceTest<br>Parameters: HIGH</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testCreateTaskUsingPriorities()'><b>testCreateTaskUsingPriorities</b><br>Test class: com.taskmanager.service.TaskServiceTest<br>Parameters: MEDIUM</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.repository.TaskRepositoryTest.testSaveTask()'><b>testSaveTask</b><br>Test class: com.taskmanager.repository.TaskRepositoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.repository.TaskRepositoryTest@6b4a4e18</td></tr>
+<tr>
+<td title='com.taskmanager.service.TaskServiceTest.testOverdueTasks()'><b>testOverdueTasks</b><br>Test class: com.taskmanager.service.TaskServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.TaskServiceTest@30b7c004</td></tr>
+<tr>
+<td title='com.taskmanager.service.CategoryServiceTest.testDeleteCategory()'><b>testDeleteCategory</b><br>Test class: com.taskmanager.service.CategoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.taskmanager.service.CategoryServiceTest@d706f19</td></tr>
+</table><p>
+</body>
+</html>

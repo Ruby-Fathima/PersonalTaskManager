@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.532" tests="53" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager\target\test-classes;C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager\target\classes;C:\Users\rubyamzn\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\rubyamzn\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\rubyamzn\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="log4j2.formatMsgNoLookups" value="true"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\rubyamzn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\rubyamzn\AppData\Local\Temp\surefire3221607359137646528\surefirebooter17785815920429143355.jar C:\Users\rubyamzn\AppData\Local\Temp\surefire3221607359137646528 2025-10-07T23-37-34_058-jvmRun1 surefire9633989888348315457tmp surefire_05915314334004189970tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager\target\test-classes;C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager\target\classes;C:\Users\rubyamzn\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\rubyamzn\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\rubyamzn\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\rubyamzn"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Users\rubyamzn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\rubyamzn\AppData\Local\Temp\surefire3221607359137646528\surefirebooter17785815920429143355.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="rubyamzn"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.8+9"/>
+    <property name="localRepository" value="C:\Users\rubyamzn\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\rubyamzn\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\Users\rubyamzn\Desktop\Java Project\eclipse-workspace\PersonalTaskManager"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\rubyamzn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/rubyamzn/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412/jre/bin/server;C:/Users/rubyamzn/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.8.v20250724-1412/jre/bin;C:\Program Files\Amazon Corretto\jdk17.0.16_8\bin;C:\Program Files\itacsvc;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\Common Files\AmazonMidwayClientSuite\bin\;C:\Program Files (x86)\ACMEGuardian\;C:\Program Files\Amazon\FOPAzureADMAnagementApp\;C:\Program Files (x86)\Quarantine\;C:\Program Files\apache-maven-3.9.11\bin;;C:\Users\rubyamzn\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSaveTask" classname="com.taskmanager.repository.TaskRepositoryTest" time="0.003">
+    <system-out><![CDATA[Task{taskId='a4590fee-56dd-499d-ac27-498ac3ccbbc2', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.945456700, priority=HIGH, category=Category{categoryId='809146eb-2777-44e9-bad3-49370b2e58fa', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.946456200, lastModifiedDate=2025-10-07T23:37:34.946456200}
+]]></system-out>
+  </testcase>
+  <testcase name="testFindById" classname="com.taskmanager.repository.TaskRepositoryTest" time="0">
+    <system-out><![CDATA[Task{taskId='9f44d7fe-2029-46c4-a428-a00229ca40dd', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.954464800, priority=HIGH, category=Category{categoryId='f97d865e-8449-400a-acca-cf41a181ee4c', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.954464800, lastModifiedDate=2025-10-07T23:37:34.954464800}
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByIdNotFound" classname="com.taskmanager.repository.TaskRepositoryTest" time="0">
+    <system-out><![CDATA[Task{taskId='e69e0559-214b-4065-837e-cadbdc36521e', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.955456100, priority=HIGH, category=Category{categoryId='68e3c526-16ab-43b6-bf0a-104cd233773a', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.955456100, lastModifiedDate=2025-10-07T23:37:34.955456100}
+]]></system-out>
+  </testcase>
+  <testcase name="testFindAll" classname="com.taskmanager.repository.TaskRepositoryTest" time="0.003">
+    <system-out><![CDATA[Task{taskId='043619b2-beb5-4aed-82fc-5664a8473773', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.956457600, priority=HIGH, category=Category{categoryId='38b42e27-8367-40e3-9a44-08fe0504e644', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.956457600, lastModifiedDate=2025-10-07T23:37:34.956457600}
+Task{taskId='b6dc7307-031f-4527-9c14-eb9da4f3e663', title='Project Deadlinea655479b-03c3-48a7-a7f9-89125b07ad8f', description='Complete and submit final project deliverables', dueDate=2025-10-09T23:37:34.956457600, priority=LOW, category=Category{categoryId='38b42e27-8367-40e3-9a44-08fe0504e644', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.956457600, lastModifiedDate=2025-10-07T23:37:34.956457600}
+]]></system-out>
+  </testcase>
+  <testcase name="testDelete" classname="com.taskmanager.repository.TaskRepositoryTest" time="0.001">
+    <system-out><![CDATA[Task{taskId='2038bf4e-1471-4d86-843d-c9ef6c26c115', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.959458600, priority=HIGH, category=Category{categoryId='a48ff886-80c8-44bc-9b5b-0c1ba5366da4', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.960458100, lastModifiedDate=2025-10-07T23:37:34.960458100}
+]]></system-out>
+  </testcase>
+  <testcase name="testExists" classname="com.taskmanager.repository.TaskRepositoryTest" time="0">
+    <system-out><![CDATA[Task{taskId='ac97851b-fc88-4fbf-8d56-3d0b25e1c9d6', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.961457300, priority=HIGH, category=Category{categoryId='7d80b33f-e81b-47f4-9244-f5ec3572bc83', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.961457300, lastModifiedDate=2025-10-07T23:37:34.961457300}
+]]></system-out>
+  </testcase>
+  <testcase name="testClear" classname="com.taskmanager.repository.TaskRepositoryTest" time="0">
+    <system-out><![CDATA[Task{taskId='21d42857-77c1-429f-b172-65cd342fff91', title='Daily Team Meeting', description='Attend daily standup meeting with development team', dueDate=2025-10-08T23:37:34.962457500, priority=HIGH, category=Category{categoryId='a8c0bd85-b85c-488a-9367-ea6dcd8664cd', name='Work ', description='Professional tasks and work-related responsibilities'}, status=PENDING, createdDate=2025-10-07T23:37:34.962457500, lastModifiedDate=2025-10-07T23:37:34.962457500}
+]]></system-out>
+  </testcase>
+  <testcase name="testDateFormats[2000-12-31 11:30](1)" classname="com.taskmanager.util.DateValidatorTest" time="0.005"/>
+  <testcase name="testDateFormats[1979-12-31](2)" classname="com.taskmanager.util.DateValidatorTest" time="0.001"/>
+  <testcase name="testDateFormats[31/12/2012 23:30](3)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testDateFormats[12/12/2012](4)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testDateFormats[22-10-2024 20:30](5)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testEmptyDate" classname="com.taskmanager.util.DateValidatorTest" time="0.001"/>
+  <testcase name="testInvalidDateFormats[2024-12-32](1)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testInvalidDateFormats[in-valid-date](2)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testLeapYearDate" classname="com.taskmanager.util.DateValidatorTest" time="0.001"/>
+  <testcase name="testLeapYearValidation[2024-02-28 11:30, true](1)" classname="com.taskmanager.util.DateValidatorTest" time="0.003"/>
+  <testcase name="testLeapYearValidation[2000-02-29, true](2)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testLeapYearValidation[2016-02-29, true](3)" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testNullDate" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testPastDate" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testValidDate" classname="com.taskmanager.util.DateValidatorTest" time="0.001"/>
+  <testcase name="testValidFutureDate" classname="com.taskmanager.util.DateValidatorTest" time="0"/>
+  <testcase name="testAllEmptyRepositoryCategories" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testCategoryById" classname="com.taskmanager.service.CategoryServiceTest" time="0.001"/>
+  <testcase name="testCreateCategory" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testDeleteCategory" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testGetAllCategories" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testUpdateCategory" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testUpdateNonExistentCategory" classname="com.taskmanager.service.CategoryServiceTest" time="0"/>
+  <testcase name="testAllTasks" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCreateTask" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCreateTaskUsingPastDate" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testCreateTaskUsingPriorities[HIGH](1)" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCreateTaskUsingPriorities[MEDIUM](2)" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCreateTaskUsingPriorities[LOW](3)" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCreateTaskWithoutTitle" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testDuplicateTask" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testGetNonExistentTask" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testOverdueTasks" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testTaskById" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testTasksByCategory" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testTasksByPriority" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testTasksByStatus" classname="com.taskmanager.service.TaskServiceTest" time="0.001"/>
+  <testcase name="testUpdateTask" classname="com.taskmanager.service.TaskServiceTest" time="0"/>
+  <testcase name="testCategoryReport" classname="com.taskmanager.service.ReportServiceTest" time="0.001"/>
+  <testcase name="testEmptyReport" classname="com.taskmanager.service.ReportServiceTest" time="0.004"/>
+  <testcase name="testGenerateReport" classname="com.taskmanager.service.ReportServiceTest" time="0.002">
+    <system-out><![CDATA[Task Management Report
+
+Total Tasks: 1
+
+Status Count:
+PENDING: 1
+
+Priority Count:
+HIGH: 1
+
+Category Count:
+Research laptop: 1
+
+Overdue Tasks: 0
+
+]]></system-out>
+  </testcase>
+  <testcase name="testOverdueTasks" classname="com.taskmanager.service.ReportServiceTest" time="0"/>
+  <testcase name="testPriorityReport" classname="com.taskmanager.service.ReportServiceTest" time="0"/>
+  <testcase name="testStatusReport" classname="com.taskmanager.service.ReportServiceTest" time="0"/>
+  <testcase name="testTasksCountByPriority" classname="com.taskmanager.service.ReportServiceTest" time="0.001">
+    <system-out><![CDATA[Task{taskId='758d6a79-1739-480d-82c6-4ae33208c6ca', title='Go to Office', description='Have to schedule meeting', dueDate=2025-10-08T23:37:35.014457, priority=HIGH, category=Category{categoryId='48469bf8-d3ff-42e7-8b68-55ee356a2b2c', name='Research laptop', description='Find new laptop'}, status=PENDING, createdDate=2025-10-07T23:37:35.014457, lastModifiedDate=2025-10-07T23:37:35.014457}
+]]></system-out>
+  </testcase>
+  <testcase name="testTasksCountByStatus" classname="com.taskmanager.service.ReportServiceTest" time="0.001"/>
+</testsuite>
