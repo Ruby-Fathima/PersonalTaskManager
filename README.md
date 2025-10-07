@@ -6,7 +6,7 @@ This project demonstrates a clean architecture with layered design and custom ex
 
 ---
 
-#Project Overview
+# Project Overview
 
 The **Personal Task Manager (CLI)** is a backend system that allows you to:
 - Create, update, and delete tasks  
@@ -142,7 +142,7 @@ Includes full TestNG suite with:
 ```
 ---
 
-**  How to Run** 
+**How to Run** 
 
 # 1️ Compile:
 ```bash
