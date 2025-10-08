@@ -21,7 +21,7 @@ The **Personal Task Manager (CLI)** is a backend system that allows you to:
 - **Java 11**: Core programming language
 - **Maven**: Build and dependency management
 - **TestNG**: Testing framework
-- **Collections Framework**: HashMap, PriorityQueue, ArrayList for data storage
+- **Collections Framework**: ConcurrentHashMap, ArrayList for data storage
 - **Java Time API**: LocalDateTime for timestamp management
 - **Enums**: Type-safe constants for various categories
 
