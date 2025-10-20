@@ -103,7 +103,6 @@ Custom exceptions:
 
 #  OOP & Core Java Concepts
 
-```
 | Concept         |            Example             |
 |-----------------|--------------------------------|
 | Encapsulation   | Getters/setters in `Task.java` |
@@ -114,7 +113,6 @@ Custom exceptions:
 | Concurrency     | Thread-safe repository         |
 | Date/Time API   | LocalDate, LocalDateTime       |
 
-```
 ---
 
 **Testing (TestNG)** 
@@ -126,7 +124,6 @@ Includes full TestNG suite with:
 - Filtering and sorting  
 - Exception handling  
 - Overdue tasks validation  
-
 
 **Dependencies** 
 
@@ -173,6 +170,13 @@ mvn test
 
 - Reports: `target/surefire-reports/`  
 - Console: shows validation, exception, and CRUD logs  
+---
+
+<h2>🧩 Framework Flowchart</h2>
+The diagram below illustrates the overall workflow of Personal Task Manager CLI version with TestNG — from test initialization to report generation.  
+<p align="center">
+  <img src="Personal_task_manager_cli.png" alt="Framework Flowchart" width="1000" style="border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+</p>
 
 ---
 
@@ -187,4 +191,5 @@ mvn test
 ---
 
 **Author**
+
 **Ruby Fathima**   
